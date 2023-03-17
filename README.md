@@ -7,6 +7,8 @@ Literature Survey on the Container Stowage Planning Problem, Jaike van Twillera,
 
 An instance reader written in the Julia programming language is provided.
 
+The dataset is available at: https://doi.org/10.11583/DTU.22293412
+
 ## Instance format description
 
 The first line of the file holds 5 values representing: the number of port visits, the number of bays in the vessel, the number of location/blocks in the vessel, the number of adjacent bays (or bins), and the number of container types.
@@ -40,4 +42,3 @@ Next there is a line for each of the container types used in the instance. Each 
 Next there is a line for each legs of the journey. The first two values of each line indicate the load and discharge port representing the leg, the rest of the values in the list represents the number of containers of each container type in that leg.
 
 Finally there is a line for each location and each discharge port (so without the first port). The line indicates the containers already on board (also called release). The first two values of each line indicate the discharge port and the location. The next values represent the number of containers of each container type.
-
