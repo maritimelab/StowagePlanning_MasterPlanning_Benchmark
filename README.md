@@ -13,7 +13,7 @@ The dataset is available at: https://doi.org/10.11583/DTU.22293412
 
 The first line of the file holds 5 values representing: the number of port visits, the number of bays in the vessel, the number of location/blocks in the vessel, the number of adjacent bays (or bins), and the number of container types.
 
-The next line is a list of bay IDs (linear starting from 1) indicating all the on-deck locations. The successive line is an array with a value for each location in the vessel. For each on-deck location the value represents the corresponding location below-deck. For all below-deck locations the value is 0. 
+The next line is a list of bay IDs (linear starting from 1) indicating all the on-deck locations. The successive line is an array with a value for each location in the vessel. For each on-deck location, the value represents the corresponding below-deck location. If the on-deck location has no below-deck counterpart, the value is 0. For each below-deck location that has a corresponding on-deck location above, the value is -1. For all other below-deck locations (with no on-deck above), the value is 0.
 
 Next there is a line for each bay. The line is a list of the on-deck locations in that bay.
 
